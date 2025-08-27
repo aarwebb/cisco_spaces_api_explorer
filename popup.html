@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spaces API Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="popup-body">
+  <div class="header">
+    <h1>CISCO<br>SPACES</h1>
+    <div class="subtitle">API EXPLORER</div>
+    <div class="logo">API</div>
+  </div>
+  
+  <div class="content">
+    <button id="open-tab" class="action-button primary-button">
+      Open API Explorer
+    </button>
+    
+    <div class="toggle-section">
+      <div class="toggle-item">
+        <div class="toggle-label-container">
+          <span class="toggle-label">API Call Tracker</span>
+          <div class="tooltip-container">
+            <span class="help-icon">?</span>
+            <div class="tooltip">Shows a floating window on pages that tracks API calls in real-time. View call counts and navigate between pages while monitoring API activity.</div>
+          </div>
+        </div>
+        <div id="toggle-api-tracker" class="toggle-switch"></div>
+      </div>
+    </div>
+    
+    <div class="toggle-section">
+      <div class="toggle-item">
+        <div class="toggle-label-container">
+          <span class="toggle-label">Recording Mode</span>
+          <div class="tooltip-container">
+            <span class="help-icon">?</span>
+            <div class="tooltip">Records all API calls across multiple pages during your browsing session. Stop recording to view and analyze the complete API call history.</div>
+          </div>
+        </div>
+        <span id="recording-text" class="recording-text">Recording...</span>
+        <div id="toggle-recording" class="toggle-switch"></div>
+      </div>
+    </div>
+    
+    <div class="view-apis-section" id="view-apis-section" style="display: none;">
+      <button id="view-apis-btn" class="action-button primary-button view-apis-button">View APIs</button>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
