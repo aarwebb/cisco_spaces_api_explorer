@@ -1,6 +1,7 @@
 # Custom ignores
 backup_extension.sh
 backups/
+tests/
 
 # Operating System Files
 .DS_Store
